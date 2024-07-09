@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choices</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/dffba75db4.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    height: 100vh;
+    background-color: #000;
+    background-image: url(coal.jpg);
+        background-size: cover;
+    background-position: center;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+a:hover {
+    color: orange;
+}
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    height: 60px;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1000; 
+}
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.logo {
+    margin-top: 20px;
+}
+.navbar .links {  
+    display: flex;
+    gap: 40px;
+    padding-left: 200px; /* Adjust this value as needed */
+    padding-right: 70px;
+    font-size: 45px;
+}
+
+.navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+        #mainarea {
+            display: block;
+            padding: 20px;
+            text-align: center;
+        }
+        #header {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        #header button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        #header button:hover {
+            background-color: #555;
+        }
+        #h2 {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+            padding-top: 30px;
+            margin-bottom: 30px;
+        }
+        .tile-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .tile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            color: #333333;
+            text-decoration: none;
+            width: 250px;
+            height: 100px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 1.2em;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .tile:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.05);
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">CRM</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Customer care <i class="fa-solid fa-message" style="padding-left: 5px;"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="mainarea">
+        <h2 id="h2" style="padding-top:70px;">Service We Provide</h2> <br>
+        <div class="tile-container">
+            <a href="video_editing.html" class="tile">Video Editing</a>
+            <a href="Content_Writing.html" class="tile">Content Writing</a>
+            <a href="Copy_Writing.html" class="tile">Copy Writing</a>
+            <a href="Data_Entry.html" class="tile">Data Entry</a>
+            <a href="Customer_support.html" class="tile">Customer Support</a>
+            <a href="Graphic_Designer.html" class="tile">Graphic Designer</a>
+        </div>
+    </div>
+</body>
+</html>
